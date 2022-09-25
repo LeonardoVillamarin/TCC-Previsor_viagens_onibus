@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 
 df = pd.read_csv("rota33642.csv")
 
-df.drop(["direcao", "hora", "equipamento", "data_chegada", "chegadaTimeStamp", "linha"], axis=1, inplace=True)
+df.drop(["direcao", "hora", "equipamento", "data_chegada", "chegadaTimeStamp", "qtdDiasAno", "linha", "turno_dia"], axis=1, inplace=True)
 df.data_partida = pd.to_datetime(df.data_partida)
 
 #%%
@@ -69,9 +69,7 @@ df = df.merge(df_teste[["predicao"]], how="left", left_index=True, right_index=T
 # teste["predicao"] = modelo_2.predict(x_teste)
 
 # %%
-# rrse = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao"]) ^ 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ^ 2))
+rrse = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao"]) ^ 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ^ 2))
 mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao"], squared=False) 
 
 # %%
-
-
