@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Resultados Preditor XGB</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Resultados Preditor Random Forest</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13982,13 +13982,13 @@ IPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">xgboost</span> <span class="k">as</span> <span class="nn">xgb</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">sklearn.metrics</span> <span class="k">as</span> <span class="nn">mtr</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">RandomizedSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
 </pre></div>
 
      </div>
@@ -14523,11 +14523,12 @@ IPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.</p>
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Escolha dos parâmetros</span>
 
 <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
-         <span class="s2">&quot;n_estimators&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)),</span> 
+         <span class="s2">&quot;n_estimators&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)),</span>
+         <span class="s2">&quot;bootstrap&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
          <span class="s2">&quot;max_depth&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">)),</span>
-         <span class="s2">&quot;min_child_weight&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)),</span>
-         <span class="s2">&quot;learning_rate&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.005</span><span class="p">],</span>
-         <span class="s2">&quot;gamma&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+         <span class="s2">&quot;max_features&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;auto&quot;</span><span class="p">,</span> <span class="s2">&quot;sqrt&quot;</span><span class="p">,</span> <span class="s2">&quot;log2&quot;</span><span class="p">],</span>
+         <span class="s2">&quot;min_samples_leaf&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)),</span>
+         <span class="s2">&quot;min_samples_split&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)),</span>
         <span class="p">}</span>
 
 <span class="n">pprint</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
@@ -14550,10 +14551,11 @@ IPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;gamma&#39;: array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]),
- &#39;learning_rate&#39;: [0.3, 0.2, 0.1, 0.05, 0.01, 0.005],
+<pre>{&#39;bootstrap&#39;: [True, False],
  &#39;max_depth&#39;: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
- &#39;min_child_weight&#39;: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+ &#39;max_features&#39;: [&#39;auto&#39;, &#39;sqrt&#39;, &#39;log2&#39;],
+ &#39;min_samples_leaf&#39;: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+ &#39;min_samples_split&#39;: [2, 3, 4, 5, 6, 7, 8, 9, 10],
  &#39;n_estimators&#39;: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]}
 </pre>
 </div>
@@ -14569,14 +14571,14 @@ IPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="c1">#Criação do modelo_xgb utilizando RandomizedSearchCV</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1">#Criação do modelo_rf utilizando RandomizedSearchCV</span>
 
-<span class="n">modelo_xgb</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">early_stop_rounds</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">xgb_rand_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">modelo_xgb</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;neg_mean_squared_error&quot;</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
-<span class="n">xgb_rand_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_treino</span><span class="p">,</span> <span class="n">y_treino</span><span class="p">)</span>
-<span class="n">modelo_xgb</span> <span class="o">=</span> <span class="n">xgb_rand_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">modelo_rf</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">()</span>
+<span class="n">rf_rand_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">modelo_rf</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;neg_mean_squared_error&quot;</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+<span class="n">rf_rand_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_treino</span><span class="p">,</span> <span class="n">y_treino</span><span class="p">)</span>
+<span class="n">modelo_rf</span> <span class="o">=</span> <span class="n">rf_rand_search</span><span class="o">.</span><span class="n">best_estimator_</span>
 
-<span class="n">pprint</span><span class="p">(</span><span class="n">xgb_rand_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">rf_rand_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14597,19 +14599,12 @@ IPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.</p>
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Fitting 10 folds for each of 40 candidates, totalling 400 fits
-[21:01:18] WARNING: C:/Users/administrator/workspace/xgboost-win64_release_1.6.0/src/learner.cc:627: 
-Parameters: { &#34;early_stop_rounds&#34; } might not be used.
-
-  This could be a false alarm, with some parameters getting used by language bindings but
-  then being mistakenly passed down to XGBoost core, or some parameter actually being used
-  but getting flagged wrongly here. Please open an issue if you find any such cases.
-
-
-{&#39;gamma&#39;: 0.0,
- &#39;learning_rate&#39;: 0.005,
- &#39;max_depth&#39;: 3,
- &#39;min_child_weight&#39;: 5,
- &#39;n_estimators&#39;: 900}
+{&#39;bootstrap&#39;: True,
+ &#39;max_depth&#39;: 10,
+ &#39;max_features&#39;: &#39;auto&#39;,
+ &#39;min_samples_leaf&#39;: 8,
+ &#39;min_samples_split&#39;: 3,
+ &#39;n_estimators&#39;: 200}
 </pre>
 </div>
 </div>
@@ -14624,8 +14619,8 @@ Parameters: { &#34;early_stop_rounds&#34; } might not be used.
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="c1">#Fit do modelo_xgb</span>
-<span class="n">modelo_xgb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_treino</span><span class="p">,</span> <span class="n">y_treino</span><span class="p">,</span> <span class="n">eval_set</span> <span class="o">=</span> <span class="p">[(</span><span class="n">x_treino</span><span class="p">,</span> <span class="n">y_treino</span><span class="p">)],</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1">#Fit do modelo_rf</span>
+<span class="n">modelo_rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_treino</span><span class="p">,</span> <span class="n">y_treino</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14641,941 +14636,14 @@ Parameters: { &#34;early_stop_rounds&#34; } might not be used.
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[21:01:19] WARNING: C:/Users/administrator/workspace/xgboost-win64_release_1.6.0/src/learner.cc:627: 
-Parameters: { &#34;early_stop_rounds&#34; } might not be used.
-
-  This could be a false alarm, with some parameters getting used by language bindings but
-  then being mistakenly passed down to XGBoost core, or some parameter actually being used
-  but getting flagged wrongly here. Please open an issue if you find any such cases.
-
-
-[0]	validation_0-rmse:1177.13656
-[1]	validation_0-rmse:1171.38344
-[2]	validation_0-rmse:1165.65965
-[3]	validation_0-rmse:1159.96504
-[4]	validation_0-rmse:1154.29961
-[5]	validation_0-rmse:1148.66303
-[6]	validation_0-rmse:1143.05529
-[7]	validation_0-rmse:1137.47617
-[8]	validation_0-rmse:1131.92554
-[9]	validation_0-rmse:1126.40328
-[10]	validation_0-rmse:1120.90924
-[11]	validation_0-rmse:1115.44327
-[12]	validation_0-rmse:1110.00525
-[13]	validation_0-rmse:1104.59506
-[14]	validation_0-rmse:1099.21252
-[15]	validation_0-rmse:1093.85753
-[16]	validation_0-rmse:1088.52996
-[17]	validation_0-rmse:1083.22962
-[18]	validation_0-rmse:1077.95643
-[19]	validation_0-rmse:1072.71028
-[20]	validation_0-rmse:1067.49098
-[21]	validation_0-rmse:1062.29840
-[22]	validation_0-rmse:1057.13244
-[23]	validation_0-rmse:1051.99296
-[24]	validation_0-rmse:1046.87985
-[25]	validation_0-rmse:1041.79295
-[26]	validation_0-rmse:1036.73119
-[27]	validation_0-rmse:1031.69540
-[28]	validation_0-rmse:1026.68547
-[29]	validation_0-rmse:1021.70122
-[30]	validation_0-rmse:1016.74257
-[31]	validation_0-rmse:1011.80939
-[32]	validation_0-rmse:1006.90154
-[33]	validation_0-rmse:1002.01888
-[34]	validation_0-rmse:997.16134
-[35]	validation_0-rmse:992.32963
-[36]	validation_0-rmse:987.52191
-[37]	validation_0-rmse:982.73888
-[38]	validation_0-rmse:977.98046
-[39]	validation_0-rmse:973.24653
-[40]	validation_0-rmse:968.53699
-[41]	validation_0-rmse:963.85170
-[42]	validation_0-rmse:959.18555
-[43]	validation_0-rmse:954.54347
-[44]	validation_0-rmse:949.92526
-[45]	validation_0-rmse:945.33546
-[46]	validation_0-rmse:940.76460
-[47]	validation_0-rmse:936.21733
-[48]	validation_0-rmse:931.69796
-[49]	validation_0-rmse:927.19733
-[50]	validation_0-rmse:922.71997
-[51]	validation_0-rmse:918.26997
-[52]	validation_0-rmse:913.83858
-[53]	validation_0-rmse:909.43007
-[54]	validation_0-rmse:905.04849
-[55]	validation_0-rmse:900.68529
-[56]	validation_0-rmse:896.34467
-[57]	validation_0-rmse:892.03050
-[58]	validation_0-rmse:887.73453
-[59]	validation_0-rmse:883.46080
-[60]	validation_0-rmse:879.21369
-[61]	validation_0-rmse:874.98398
-[62]	validation_0-rmse:870.77616
-[63]	validation_0-rmse:866.59015
-[64]	validation_0-rmse:862.42945
-[65]	validation_0-rmse:858.28660
-[66]	validation_0-rmse:854.16526
-[67]	validation_0-rmse:850.06880
-[68]	validation_0-rmse:845.98998
-[69]	validation_0-rmse:841.93236
-[70]	validation_0-rmse:837.89914
-[71]	validation_0-rmse:833.88342
-[72]	validation_0-rmse:829.88859
-[73]	validation_0-rmse:825.91774
-[74]	validation_0-rmse:821.96425
-[75]	validation_0-rmse:818.03130
-[76]	validation_0-rmse:814.12245
-[77]	validation_0-rmse:810.23021
-[78]	validation_0-rmse:806.35827
-[79]	validation_0-rmse:802.50946
-[80]	validation_0-rmse:798.67766
-[81]	validation_0-rmse:794.86583
-[82]	validation_0-rmse:791.07671
-[83]	validation_0-rmse:787.30446
-[84]	validation_0-rmse:783.55188
-[85]	validation_0-rmse:779.82160
-[86]	validation_0-rmse:776.10803
-[87]	validation_0-rmse:772.41387
-[88]	validation_0-rmse:768.74160
-[89]	validation_0-rmse:765.08588
-[90]	validation_0-rmse:761.44931
-[91]	validation_0-rmse:757.83419
-[92]	validation_0-rmse:754.23547
-[93]	validation_0-rmse:750.65563
-[94]	validation_0-rmse:747.09724
-[95]	validation_0-rmse:743.55473
-[96]	validation_0-rmse:740.03081
-[97]	validation_0-rmse:736.52758
-[98]	validation_0-rmse:733.04046
-[99]	validation_0-rmse:729.57166
-[100]	validation_0-rmse:726.12318
-[101]	validation_0-rmse:722.69066
-[102]	validation_0-rmse:719.27624
-[103]	validation_0-rmse:715.88170
-[104]	validation_0-rmse:712.50301
-[105]	validation_0-rmse:709.14214
-[106]	validation_0-rmse:705.80080
-[107]	validation_0-rmse:702.47516
-[108]	validation_0-rmse:699.16710
-[109]	validation_0-rmse:695.87818
-[110]	validation_0-rmse:692.60485
-[111]	validation_0-rmse:689.34883
-[112]	validation_0-rmse:686.11183
-[113]	validation_0-rmse:682.89005
-[114]	validation_0-rmse:679.68532
-[115]	validation_0-rmse:676.50277
-[116]	validation_0-rmse:673.33188
-[117]	validation_0-rmse:670.17780
-[118]	validation_0-rmse:667.04047
-[119]	validation_0-rmse:663.92486
-[120]	validation_0-rmse:660.82070
-[121]	validation_0-rmse:657.73296
-[122]	validation_0-rmse:654.66163
-[123]	validation_0-rmse:651.60656
-[124]	validation_0-rmse:648.57260
-[125]	validation_0-rmse:645.54983
-[126]	validation_0-rmse:642.54409
-[127]	validation_0-rmse:639.55335
-[128]	validation_0-rmse:636.57852
-[129]	validation_0-rmse:633.62043
-[130]	validation_0-rmse:630.67712
-[131]	validation_0-rmse:627.75429
-[132]	validation_0-rmse:624.84228
-[133]	validation_0-rmse:621.94579
-[134]	validation_0-rmse:619.06477
-[135]	validation_0-rmse:616.19915
-[136]	validation_0-rmse:613.35343
-[137]	validation_0-rmse:610.51830
-[138]	validation_0-rmse:607.69915
-[139]	validation_0-rmse:604.89429
-[140]	validation_0-rmse:602.10440
-[141]	validation_0-rmse:599.33406
-[142]	validation_0-rmse:596.57399
-[143]	validation_0-rmse:593.82875
-[144]	validation_0-rmse:591.09824
-[145]	validation_0-rmse:588.38679
-[146]	validation_0-rmse:585.68550
-[147]	validation_0-rmse:582.99951
-[148]	validation_0-rmse:580.32722
-[149]	validation_0-rmse:577.66935
-[150]	validation_0-rmse:575.02654
-[151]	validation_0-rmse:572.39718
-[152]	validation_0-rmse:569.78205
-[153]	validation_0-rmse:567.18537
-[154]	validation_0-rmse:564.59836
-[155]	validation_0-rmse:562.02540
-[156]	validation_0-rmse:559.46636
-[157]	validation_0-rmse:556.92539
-[158]	validation_0-rmse:554.39397
-[159]	validation_0-rmse:551.87673
-[160]	validation_0-rmse:549.37271
-[161]	validation_0-rmse:546.88227
-[162]	validation_0-rmse:544.40603
-[163]	validation_0-rmse:541.94259
-[164]	validation_0-rmse:539.49322
-[165]	validation_0-rmse:537.05652
-[166]	validation_0-rmse:534.63316
-[167]	validation_0-rmse:532.22673
-[168]	validation_0-rmse:529.82962
-[169]	validation_0-rmse:527.44565
-[170]	validation_0-rmse:525.07474
-[171]	validation_0-rmse:522.72048
-[172]	validation_0-rmse:520.37541
-[173]	validation_0-rmse:518.04380
-[174]	validation_0-rmse:515.72433
-[175]	validation_0-rmse:513.41764
-[176]	validation_0-rmse:511.12714
-[177]	validation_0-rmse:508.84565
-[178]	validation_0-rmse:506.57675
-[179]	validation_0-rmse:504.32037
-[180]	validation_0-rmse:502.07983
-[181]	validation_0-rmse:499.84818
-[182]	validation_0-rmse:497.62891
-[183]	validation_0-rmse:495.42189
-[184]	validation_0-rmse:493.22708
-[185]	validation_0-rmse:491.04767
-[186]	validation_0-rmse:488.87707
-[187]	validation_0-rmse:486.71848
-[188]	validation_0-rmse:484.57190
-[189]	validation_0-rmse:482.44040
-[190]	validation_0-rmse:480.31757
-[191]	validation_0-rmse:478.20655
-[192]	validation_0-rmse:476.10731
-[193]	validation_0-rmse:474.02286
-[194]	validation_0-rmse:471.94692
-[195]	validation_0-rmse:469.88255
-[196]	validation_0-rmse:467.82978
-[197]	validation_0-rmse:465.78846
-[198]	validation_0-rmse:463.76150
-[199]	validation_0-rmse:461.74297
-[200]	validation_0-rmse:459.73867
-[201]	validation_0-rmse:457.74269
-[202]	validation_0-rmse:455.76084
-[203]	validation_0-rmse:453.78723
-[204]	validation_0-rmse:451.82460
-[205]	validation_0-rmse:449.87307
-[206]	validation_0-rmse:447.93548
-[207]	validation_0-rmse:446.00596
-[208]	validation_0-rmse:444.08734
-[209]	validation_0-rmse:442.17630
-[210]	validation_0-rmse:440.27616
-[211]	validation_0-rmse:438.39268
-[212]	validation_0-rmse:436.51399
-[213]	validation_0-rmse:434.65183
-[214]	validation_0-rmse:432.79436
-[215]	validation_0-rmse:430.95053
-[216]	validation_0-rmse:429.11699
-[217]	validation_0-rmse:427.29104
-[218]	validation_0-rmse:425.48124
-[219]	validation_0-rmse:423.67609
-[220]	validation_0-rmse:421.88132
-[221]	validation_0-rmse:420.09687
-[222]	validation_0-rmse:418.32272
-[223]	validation_0-rmse:416.56395
-[224]	validation_0-rmse:414.81005
-[225]	validation_0-rmse:413.07147
-[226]	validation_0-rmse:411.34031
-[227]	validation_0-rmse:409.61645
-[228]	validation_0-rmse:407.90779
-[229]	validation_0-rmse:406.20373
-[230]	validation_0-rmse:404.51190
-[231]	validation_0-rmse:402.82748
-[232]	validation_0-rmse:401.15801
-[233]	validation_0-rmse:399.49303
-[234]	validation_0-rmse:397.84005
-[235]	validation_0-rmse:396.19435
-[236]	validation_0-rmse:394.56075
-[237]	validation_0-rmse:392.93417
-[238]	validation_0-rmse:391.32204
-[239]	validation_0-rmse:389.71436
-[240]	validation_0-rmse:388.11830
-[241]	validation_0-rmse:386.52936
-[242]	validation_0-rmse:384.95463
-[243]	validation_0-rmse:383.38431
-[244]	validation_0-rmse:381.82325
-[245]	validation_0-rmse:380.27145
-[246]	validation_0-rmse:378.72883
-[247]	validation_0-rmse:377.19967
-[248]	validation_0-rmse:375.67518
-[249]	validation_0-rmse:374.16406
-[250]	validation_0-rmse:372.65945
-[251]	validation_0-rmse:371.16181
-[252]	validation_0-rmse:369.67821
-[253]	validation_0-rmse:368.19832
-[254]	validation_0-rmse:366.72729
-[255]	validation_0-rmse:365.26508
-[256]	validation_0-rmse:363.81159
-[257]	validation_0-rmse:362.37060
-[258]	validation_0-rmse:360.93922
-[259]	validation_0-rmse:359.51154
-[260]	validation_0-rmse:358.09247
-[261]	validation_0-rmse:356.68193
-[262]	validation_0-rmse:355.28122
-[263]	validation_0-rmse:353.88762
-[264]	validation_0-rmse:352.50695
-[265]	validation_0-rmse:351.13004
-[266]	validation_0-rmse:349.76152
-[267]	validation_0-rmse:348.40131
-[268]	validation_0-rmse:347.05245
-[269]	validation_0-rmse:345.70869
-[270]	validation_0-rmse:344.37313
-[271]	validation_0-rmse:343.04573
-[272]	validation_0-rmse:341.73055
-[273]	validation_0-rmse:340.41926
-[274]	validation_0-rmse:339.11604
-[275]	validation_0-rmse:337.82083
-[276]	validation_0-rmse:336.53359
-[277]	validation_0-rmse:335.25400
-[278]	validation_0-rmse:333.98627
-[279]	validation_0-rmse:332.72255
-[280]	validation_0-rmse:331.46664
-[281]	validation_0-rmse:330.20565
-[282]	validation_0-rmse:328.95246
-[283]	validation_0-rmse:327.70705
-[284]	validation_0-rmse:326.48444
-[285]	validation_0-rmse:325.25426
-[286]	validation_0-rmse:324.03175
-[287]	validation_0-rmse:322.81685
-[288]	validation_0-rmse:321.62564
-[289]	validation_0-rmse:320.42566
-[290]	validation_0-rmse:319.23319
-[291]	validation_0-rmse:318.05994
-[292]	validation_0-rmse:316.88225
-[293]	validation_0-rmse:315.71159
-[294]	validation_0-rmse:314.55947
-[295]	validation_0-rmse:313.40370
-[296]	validation_0-rmse:312.27057
-[297]	validation_0-rmse:311.12917
-[298]	validation_0-rmse:309.99463
-[299]	validation_0-rmse:308.86766
-[300]	validation_0-rmse:307.76058
-[301]	validation_0-rmse:306.64734
-[302]	validation_0-rmse:305.54154
-[303]	validation_0-rmse:304.44242
-[304]	validation_0-rmse:303.35066
-[305]	validation_0-rmse:302.27680
-[306]	validation_0-rmse:301.19850
-[307]	validation_0-rmse:300.12745
-[308]	validation_0-rmse:299.07745
-[309]	validation_0-rmse:298.01995
-[310]	validation_0-rmse:296.96894
-[311]	validation_0-rmse:295.92505
-[312]	validation_0-rmse:294.88753
-[313]	validation_0-rmse:293.86945
-[314]	validation_0-rmse:292.84041
-[315]	validation_0-rmse:291.81807
-[316]	validation_0-rmse:290.80236
-[317]	validation_0-rmse:289.79817
-[318]	validation_0-rmse:288.79559
-[319]	validation_0-rmse:287.79955
-[320]	validation_0-rmse:286.81005
-[321]	validation_0-rmse:285.84250
-[322]	validation_0-rmse:284.86575
-[323]	validation_0-rmse:283.90965
-[324]	validation_0-rmse:282.94555
-[325]	validation_0-rmse:281.98780
-[326]	validation_0-rmse:281.03637
-[327]	validation_0-rmse:280.09124
-[328]	validation_0-rmse:279.16715
-[329]	validation_0-rmse:278.24994
-[330]	validation_0-rmse:277.32330
-[331]	validation_0-rmse:276.40286
-[332]	validation_0-rmse:275.48836
-[333]	validation_0-rmse:274.58425
-[334]	validation_0-rmse:273.68187
-[335]	validation_0-rmse:272.78573
-[336]	validation_0-rmse:271.90944
-[337]	validation_0-rmse:271.04081
-[338]	validation_0-rmse:270.16226
-[339]	validation_0-rmse:269.28947
-[340]	validation_0-rmse:268.42273
-[341]	validation_0-rmse:267.57428
-[342]	validation_0-rmse:266.71894
-[343]	validation_0-rmse:265.86955
-[344]	validation_0-rmse:265.02578
-[345]	validation_0-rmse:264.18789
-[346]	validation_0-rmse:263.36931
-[347]	validation_0-rmse:262.54252
-[348]	validation_0-rmse:261.72150
-[349]	validation_0-rmse:260.90599
-[350]	validation_0-rmse:260.09884
-[351]	validation_0-rmse:259.29456
-[352]	validation_0-rmse:258.50793
-[353]	validation_0-rmse:257.71442
-[354]	validation_0-rmse:256.92655
-[355]	validation_0-rmse:256.14396
-[356]	validation_0-rmse:255.36612
-[357]	validation_0-rmse:254.60785
-[358]	validation_0-rmse:253.84058
-[359]	validation_0-rmse:253.07937
-[360]	validation_0-rmse:252.33428
-[361]	validation_0-rmse:251.58361
-[362]	validation_0-rmse:250.83739
-[363]	validation_0-rmse:250.09709
-[364]	validation_0-rmse:249.37401
-[365]	validation_0-rmse:248.64321
-[366]	validation_0-rmse:247.91824
-[367]	validation_0-rmse:247.20076
-[368]	validation_0-rmse:246.48608
-[369]	validation_0-rmse:245.78867
-[370]	validation_0-rmse:245.08313
-[371]	validation_0-rmse:244.38326
-[372]	validation_0-rmse:243.68770
-[373]	validation_0-rmse:243.00830
-[374]	validation_0-rmse:242.32325
-[375]	validation_0-rmse:241.64299
-[376]	validation_0-rmse:240.96693
-[377]	validation_0-rmse:240.30596
-[378]	validation_0-rmse:239.64012
-[379]	validation_0-rmse:238.97840
-[380]	validation_0-rmse:238.33346
-[381]	validation_0-rmse:237.68187
-[382]	validation_0-rmse:237.03421
-[383]	validation_0-rmse:236.39189
-[384]	validation_0-rmse:235.76336
-[385]	validation_0-rmse:235.12953
-[386]	validation_0-rmse:234.51192
-[387]	validation_0-rmse:233.88793
-[388]	validation_0-rmse:233.26771
-[389]	validation_0-rmse:232.65266
-[390]	validation_0-rmse:232.04399
-[391]	validation_0-rmse:231.43724
-[392]	validation_0-rmse:230.84551
-[393]	validation_0-rmse:230.24813
-[394]	validation_0-rmse:229.65453
-[395]	validation_0-rmse:229.06592
-[396]	validation_0-rmse:228.49060
-[397]	validation_0-rmse:227.90992
-[398]	validation_0-rmse:227.33432
-[399]	validation_0-rmse:226.76224
-[400]	validation_0-rmse:226.20482
-[401]	validation_0-rmse:225.64186
-[402]	validation_0-rmse:225.08235
-[403]	validation_0-rmse:224.53553
-[404]	validation_0-rmse:223.99444
-[405]	validation_0-rmse:223.44768
-[406]	validation_0-rmse:222.90447
-[407]	validation_0-rmse:222.36758
-[408]	validation_0-rmse:221.83303
-[409]	validation_0-rmse:221.30272
-[410]	validation_0-rmse:220.78497
-[411]	validation_0-rmse:220.26178
-[412]	validation_0-rmse:219.74310
-[413]	validation_0-rmse:219.22782
-[414]	validation_0-rmse:218.72591
-[415]	validation_0-rmse:218.21831
-[416]	validation_0-rmse:217.72024
-[417]	validation_0-rmse:217.22076
-[418]	validation_0-rmse:216.72460
-[419]	validation_0-rmse:216.23299
-[420]	validation_0-rmse:215.75344
-[421]	validation_0-rmse:215.26848
-[422]	validation_0-rmse:214.78774
-[423]	validation_0-rmse:214.31813
-[424]	validation_0-rmse:213.84417
-[425]	validation_0-rmse:213.37438
-[426]	validation_0-rmse:212.91071
-[427]	validation_0-rmse:212.44760
-[428]	validation_0-rmse:211.99655
-[429]	validation_0-rmse:211.54119
-[430]	validation_0-rmse:211.08867
-[431]	validation_0-rmse:210.64794
-[432]	validation_0-rmse:210.20305
-[433]	validation_0-rmse:209.76516
-[434]	validation_0-rmse:209.33442
-[435]	validation_0-rmse:208.89897
-[436]	validation_0-rmse:208.46738
-[437]	validation_0-rmse:208.03248
-[438]	validation_0-rmse:207.60719
-[439]	validation_0-rmse:207.17902
-[440]	validation_0-rmse:206.75425
-[441]	validation_0-rmse:206.33285
-[442]	validation_0-rmse:205.91480
-[443]	validation_0-rmse:205.50971
-[444]	validation_0-rmse:205.09809
-[445]	validation_0-rmse:204.68975
-[446]	validation_0-rmse:204.28468
-[447]	validation_0-rmse:203.88285
-[448]	validation_0-rmse:203.48424
-[449]	validation_0-rmse:203.09628
-[450]	validation_0-rmse:202.70393
-[451]	validation_0-rmse:202.31465
-[452]	validation_0-rmse:201.92851
-[453]	validation_0-rmse:201.55694
-[454]	validation_0-rmse:201.17724
-[455]	validation_0-rmse:200.80025
-[456]	validation_0-rmse:200.42629
-[457]	validation_0-rmse:200.06293
-[458]	validation_0-rmse:199.69517
-[459]	validation_0-rmse:199.33003
-[460]	validation_0-rmse:198.96785
-[461]	validation_0-rmse:198.61922
-[462]	validation_0-rmse:198.26276
-[463]	validation_0-rmse:197.91562
-[464]	validation_0-rmse:197.56480
-[465]	validation_0-rmse:197.22755
-[466]	validation_0-rmse:196.88260
-[467]	validation_0-rmse:196.53972
-[468]	validation_0-rmse:196.21056
-[469]	validation_0-rmse:195.87311
-[470]	validation_0-rmse:195.54919
-[471]	validation_0-rmse:195.21712
-[472]	validation_0-rmse:194.89651
-[473]	validation_0-rmse:194.58049
-[474]	validation_0-rmse:194.25622
-[475]	validation_0-rmse:193.93879
-[476]	validation_0-rmse:193.63042
-[477]	validation_0-rmse:193.31395
-[478]	validation_0-rmse:193.00897
-[479]	validation_0-rmse:192.69756
-[480]	validation_0-rmse:192.39915
-[481]	validation_0-rmse:192.09276
-[482]	validation_0-rmse:191.78893
-[483]	validation_0-rmse:191.49779
-[484]	validation_0-rmse:191.20695
-[485]	validation_0-rmse:190.91035
-[486]	validation_0-rmse:190.62636
-[487]	validation_0-rmse:190.33455
-[488]	validation_0-rmse:190.05454
-[489]	validation_0-rmse:189.76745
-[490]	validation_0-rmse:189.49333
-[491]	validation_0-rmse:189.21091
-[492]	validation_0-rmse:188.93572
-[493]	validation_0-rmse:188.65379
-[494]	validation_0-rmse:188.37830
-[495]	validation_0-rmse:188.10105
-[496]	validation_0-rmse:187.82597
-[497]	validation_0-rmse:187.56457
-[498]	validation_0-rmse:187.29414
-[499]	validation_0-rmse:187.02584
-[500]	validation_0-rmse:186.76008
-[501]	validation_0-rmse:186.50983
-[502]	validation_0-rmse:186.24813
-[503]	validation_0-rmse:185.99980
-[504]	validation_0-rmse:185.74261
-[505]	validation_0-rmse:185.50065
-[506]	validation_0-rmse:185.24770
-[507]	validation_0-rmse:185.00713
-[508]	validation_0-rmse:184.75832
-[509]	validation_0-rmse:184.51163
-[510]	validation_0-rmse:184.27969
-[511]	validation_0-rmse:184.04398
-[512]	validation_0-rmse:183.80381
-[513]	validation_0-rmse:183.57772
-[514]	validation_0-rmse:183.34152
-[515]	validation_0-rmse:183.10680
-[516]	validation_0-rmse:182.88399
-[517]	validation_0-rmse:182.65991
-[518]	validation_0-rmse:182.43992
-[519]	validation_0-rmse:182.21330
-[520]	validation_0-rmse:181.99705
-[521]	validation_0-rmse:181.77421
-[522]	validation_0-rmse:181.56472
-[523]	validation_0-rmse:181.35393
-[524]	validation_0-rmse:181.13655
-[525]	validation_0-rmse:180.92937
-[526]	validation_0-rmse:180.71406
-[527]	validation_0-rmse:180.51330
-[528]	validation_0-rmse:180.31138
-[529]	validation_0-rmse:180.10136
-[530]	validation_0-rmse:179.89470
-[531]	validation_0-rmse:179.69792
-[532]	validation_0-rmse:179.50555
-[533]	validation_0-rmse:179.30245
-[534]	validation_0-rmse:179.10833
-[535]	validation_0-rmse:178.92087
-[536]	validation_0-rmse:178.72285
-[537]	validation_0-rmse:178.53594
-[538]	validation_0-rmse:178.34127
-[539]	validation_0-rmse:178.16014
-[540]	validation_0-rmse:177.96872
-[541]	validation_0-rmse:177.79020
-[542]	validation_0-rmse:177.60896
-[543]	validation_0-rmse:177.43145
-[544]	validation_0-rmse:177.24633
-[545]	validation_0-rmse:177.07439
-[546]	validation_0-rmse:176.90139
-[547]	validation_0-rmse:176.72087
-[548]	validation_0-rmse:176.55281
-[549]	validation_0-rmse:176.38217
-[550]	validation_0-rmse:176.20616
-[551]	validation_0-rmse:176.04239
-[552]	validation_0-rmse:175.87613
-[553]	validation_0-rmse:175.70452
-[554]	validation_0-rmse:175.54500
-[555]	validation_0-rmse:175.38496
-[556]	validation_0-rmse:175.21762
-[557]	validation_0-rmse:175.05845
-[558]	validation_0-rmse:174.90435
-[559]	validation_0-rmse:174.74793
-[560]	validation_0-rmse:174.58616
-[561]	validation_0-rmse:174.43425
-[562]	validation_0-rmse:174.28542
-[563]	validation_0-rmse:174.13618
-[564]	validation_0-rmse:173.98642
-[565]	validation_0-rmse:173.84176
-[566]	validation_0-rmse:173.69843
-[567]	validation_0-rmse:173.55641
-[568]	validation_0-rmse:173.41522
-[569]	validation_0-rmse:173.26497
-[570]	validation_0-rmse:173.12669
-[571]	validation_0-rmse:172.98919
-[572]	validation_0-rmse:172.84267
-[573]	validation_0-rmse:172.70806
-[574]	validation_0-rmse:172.57414
-[575]	validation_0-rmse:172.43999
-[576]	validation_0-rmse:172.30846
-[577]	validation_0-rmse:172.17668
-[578]	validation_0-rmse:172.04613
-[579]	validation_0-rmse:171.90782
-[580]	validation_0-rmse:171.77994
-[581]	validation_0-rmse:171.65279
-[582]	validation_0-rmse:171.52681
-[583]	validation_0-rmse:171.40227
-[584]	validation_0-rmse:171.27852
-[585]	validation_0-rmse:171.15592
-[586]	validation_0-rmse:171.03464
-[587]	validation_0-rmse:170.91420
-[588]	validation_0-rmse:170.79350
-[589]	validation_0-rmse:170.67521
-[590]	validation_0-rmse:170.55801
-[591]	validation_0-rmse:170.44196
-[592]	validation_0-rmse:170.32684
-[593]	validation_0-rmse:170.21280
-[594]	validation_0-rmse:170.09977
-[595]	validation_0-rmse:169.98775
-[596]	validation_0-rmse:169.87678
-[597]	validation_0-rmse:169.76515
-[598]	validation_0-rmse:169.65616
-[599]	validation_0-rmse:169.54817
-[600]	validation_0-rmse:169.44098
-[601]	validation_0-rmse:169.33491
-[602]	validation_0-rmse:169.22984
-[603]	validation_0-rmse:169.12418
-[604]	validation_0-rmse:169.02098
-[605]	validation_0-rmse:168.91874
-[606]	validation_0-rmse:168.81393
-[607]	validation_0-rmse:168.71483
-[608]	validation_0-rmse:168.61668
-[609]	validation_0-rmse:168.51633
-[610]	validation_0-rmse:168.41993
-[611]	validation_0-rmse:168.32108
-[612]	validation_0-rmse:168.22642
-[613]	validation_0-rmse:168.13265
-[614]	validation_0-rmse:168.03638
-[615]	validation_0-rmse:167.94432
-[616]	validation_0-rmse:167.85305
-[617]	validation_0-rmse:167.75929
-[618]	validation_0-rmse:167.66969
-[619]	validation_0-rmse:167.58094
-[620]	validation_0-rmse:167.48881
-[621]	validation_0-rmse:167.40165
-[622]	validation_0-rmse:167.31537
-[623]	validation_0-rmse:167.22637
-[624]	validation_0-rmse:167.14161
-[625]	validation_0-rmse:167.05588
-[626]	validation_0-rmse:166.96916
-[627]	validation_0-rmse:166.88467
-[628]	validation_0-rmse:166.80118
-[629]	validation_0-rmse:166.71625
-[630]	validation_0-rmse:166.63396
-[631]	validation_0-rmse:166.55274
-[632]	validation_0-rmse:166.47226
-[633]	validation_0-rmse:166.38895
-[634]	validation_0-rmse:166.30958
-[635]	validation_0-rmse:166.23108
-[636]	validation_0-rmse:166.14989
-[637]	validation_0-rmse:166.07260
-[638]	validation_0-rmse:165.99615
-[639]	validation_0-rmse:165.91822
-[640]	validation_0-rmse:165.84297
-[641]	validation_0-rmse:165.76852
-[642]	validation_0-rmse:165.69493
-[643]	validation_0-rmse:165.61839
-[644]	validation_0-rmse:165.54595
-[645]	validation_0-rmse:165.47397
-[646]	validation_0-rmse:165.40058
-[647]	validation_0-rmse:165.32989
-[648]	validation_0-rmse:165.25989
-[649]	validation_0-rmse:165.18710
-[650]	validation_0-rmse:165.11826
-[651]	validation_0-rmse:165.05009
-[652]	validation_0-rmse:164.98280
-[653]	validation_0-rmse:164.91388
-[654]	validation_0-rmse:164.84190
-[655]	validation_0-rmse:164.77610
-[656]	validation_0-rmse:164.71115
-[657]	validation_0-rmse:164.64101
-[658]	validation_0-rmse:164.57722
-[659]	validation_0-rmse:164.51026
-[660]	validation_0-rmse:164.44737
-[661]	validation_0-rmse:164.38148
-[662]	validation_0-rmse:164.31956
-[663]	validation_0-rmse:164.25485
-[664]	validation_0-rmse:164.19404
-[665]	validation_0-rmse:164.13035
-[666]	validation_0-rmse:164.07057
-[667]	validation_0-rmse:164.00590
-[668]	validation_0-rmse:163.94386
-[669]	validation_0-rmse:163.88566
-[670]	validation_0-rmse:163.82793
-[671]	validation_0-rmse:163.76745
-[672]	validation_0-rmse:163.71104
-[673]	validation_0-rmse:163.65484
-[674]	validation_0-rmse:163.59570
-[675]	validation_0-rmse:163.54046
-[676]	validation_0-rmse:163.48247
-[677]	validation_0-rmse:163.42822
-[678]	validation_0-rmse:163.37104
-[679]	validation_0-rmse:163.31800
-[680]	validation_0-rmse:163.26194
-[681]	validation_0-rmse:163.20949
-[682]	validation_0-rmse:163.15333
-[683]	validation_0-rmse:163.09349
-[684]	validation_0-rmse:163.04269
-[685]	validation_0-rmse:162.99203
-[686]	validation_0-rmse:162.93365
-[687]	validation_0-rmse:162.88078
-[688]	validation_0-rmse:162.82336
-[689]	validation_0-rmse:162.77585
-[690]	validation_0-rmse:162.72415
-[691]	validation_0-rmse:162.66809
-[692]	validation_0-rmse:162.62190
-[693]	validation_0-rmse:162.57149
-[694]	validation_0-rmse:162.52267
-[695]	validation_0-rmse:162.46831
-[696]	validation_0-rmse:162.42222
-[697]	validation_0-rmse:162.37679
-[698]	validation_0-rmse:162.32372
-[699]	validation_0-rmse:162.27573
-[700]	validation_0-rmse:162.23259
-[701]	validation_0-rmse:162.18077
-[702]	validation_0-rmse:162.13367
-[703]	validation_0-rmse:162.09169
-[704]	validation_0-rmse:162.04563
-[705]	validation_0-rmse:161.99536
-[706]	validation_0-rmse:161.95446
-[707]	validation_0-rmse:161.90955
-[708]	validation_0-rmse:161.86046
-[709]	validation_0-rmse:161.81597
-[710]	validation_0-rmse:161.77506
-[711]	validation_0-rmse:161.72711
-[712]	validation_0-rmse:161.68714
-[713]	validation_0-rmse:161.63998
-[714]	validation_0-rmse:161.59754
-[715]	validation_0-rmse:161.55968
-[716]	validation_0-rmse:161.51760
-[717]	validation_0-rmse:161.47185
-[718]	validation_0-rmse:161.43499
-[719]	validation_0-rmse:161.39423
-[720]	validation_0-rmse:161.34952
-[721]	validation_0-rmse:161.31363
-[722]	validation_0-rmse:161.27477
-[723]	validation_0-rmse:161.23108
-[724]	validation_0-rmse:161.19195
-[725]	validation_0-rmse:161.15733
-[726]	validation_0-rmse:161.11464
-[727]	validation_0-rmse:161.07702
-[728]	validation_0-rmse:161.04325
-[729]	validation_0-rmse:161.00564
-[730]	validation_0-rmse:160.96420
-[731]	validation_0-rmse:160.93130
-[732]	validation_0-rmse:160.89460
-[733]	validation_0-rmse:160.85410
-[734]	validation_0-rmse:160.82204
-[735]	validation_0-rmse:160.78701
-[736]	validation_0-rmse:160.74741
-[737]	validation_0-rmse:160.71215
-[738]	validation_0-rmse:160.68118
-[739]	validation_0-rmse:160.64247
-[740]	validation_0-rmse:160.60807
-[741]	validation_0-rmse:160.57794
-[742]	validation_0-rmse:160.54009
-[743]	validation_0-rmse:160.50650
-[744]	validation_0-rmse:160.47583
-[745]	validation_0-rmse:160.44508
-[746]	validation_0-rmse:160.40835
-[747]	validation_0-rmse:160.37527
-[748]	validation_0-rmse:160.34566
-[749]	validation_0-rmse:160.30973
-[750]	validation_0-rmse:160.28179
-[751]	validation_0-rmse:160.25021
-[752]	validation_0-rmse:160.21508
-[753]	validation_0-rmse:160.18785
-[754]	validation_0-rmse:160.15703
-[755]	validation_0-rmse:160.12267
-[756]	validation_0-rmse:160.09617
-[757]	validation_0-rmse:160.06608
-[758]	validation_0-rmse:160.03053
-[759]	validation_0-rmse:160.00031
-[760]	validation_0-rmse:159.97348
-[761]	validation_0-rmse:159.94057
-[762]	validation_0-rmse:159.91164
-[763]	validation_0-rmse:159.88500
-[764]	validation_0-rmse:159.85900
-[765]	validation_0-rmse:159.82511
-[766]	validation_0-rmse:159.79642
-[767]	validation_0-rmse:159.76488
-[768]	validation_0-rmse:159.73727
-[769]	validation_0-rmse:159.71245
-[770]	validation_0-rmse:159.68724
-[771]	validation_0-rmse:159.65471
-[772]	validation_0-rmse:159.63038
-[773]	validation_0-rmse:159.59836
-[774]	validation_0-rmse:159.57196
-[775]	validation_0-rmse:159.54836
-[776]	validation_0-rmse:159.51876
-[777]	validation_0-rmse:159.49299
-[778]	validation_0-rmse:159.46989
-[779]	validation_0-rmse:159.43914
-[780]	validation_0-rmse:159.41318
-[781]	validation_0-rmse:159.38462
-[782]	validation_0-rmse:159.35982
-[783]	validation_0-rmse:159.33774
-[784]	validation_0-rmse:159.31545
-[785]	validation_0-rmse:159.28591
-[786]	validation_0-rmse:159.26424
-[787]	validation_0-rmse:159.23956
-[788]	validation_0-rmse:159.21062
-[789]	validation_0-rmse:159.18709
-[790]	validation_0-rmse:159.16626
-[791]	validation_0-rmse:159.13955
-[792]	validation_0-rmse:159.11894
-[793]	validation_0-rmse:159.09097
-[794]	validation_0-rmse:159.06829
-[795]	validation_0-rmse:159.04474
-[796]	validation_0-rmse:159.01895
-[797]	validation_0-rmse:158.99677
-[798]	validation_0-rmse:158.97727
-[799]	validation_0-rmse:158.95709
-[800]	validation_0-rmse:158.93036
-[801]	validation_0-rmse:158.90881
-[802]	validation_0-rmse:158.88406
-[803]	validation_0-rmse:158.86530
-[804]	validation_0-rmse:158.84423
-[805]	validation_0-rmse:158.81838
-[806]	validation_0-rmse:158.79997
-[807]	validation_0-rmse:158.77937
-[808]	validation_0-rmse:158.75558
-[809]	validation_0-rmse:158.73530
-[810]	validation_0-rmse:158.71808
-[811]	validation_0-rmse:158.69321
-[812]	validation_0-rmse:158.67337
-[813]	validation_0-rmse:158.64872
-[814]	validation_0-rmse:158.62918
-[815]	validation_0-rmse:158.61212
-[816]	validation_0-rmse:158.58943
-[817]	validation_0-rmse:158.57032
-[818]	validation_0-rmse:158.55270
-[819]	validation_0-rmse:158.53049
-[820]	validation_0-rmse:158.51390
-[821]	validation_0-rmse:158.49530
-[822]	validation_0-rmse:158.47208
-[823]	validation_0-rmse:158.45605
-[824]	validation_0-rmse:158.43787
-[825]	validation_0-rmse:158.41504
-[826]	validation_0-rmse:158.39938
-[827]	validation_0-rmse:158.38158
-[828]	validation_0-rmse:158.36060
-[829]	validation_0-rmse:158.34306
-[830]	validation_0-rmse:158.32096
-[831]	validation_0-rmse:158.30591
-[832]	validation_0-rmse:158.28874
-[833]	validation_0-rmse:158.26605
-[834]	validation_0-rmse:158.24589
-[835]	validation_0-rmse:158.23134
-[836]	validation_0-rmse:158.21462
-[837]	validation_0-rmse:158.19345
-[838]	validation_0-rmse:158.17700
-[839]	validation_0-rmse:158.15505
-[840]	validation_0-rmse:158.13563
-[841]	validation_0-rmse:158.11824
-[842]	validation_0-rmse:158.09775
-[843]	validation_0-rmse:158.08183
-[844]	validation_0-rmse:158.06294
-[845]	validation_0-rmse:158.04942
-[846]	validation_0-rmse:158.03384
-[847]	validation_0-rmse:158.01393
-[848]	validation_0-rmse:157.99730
-[849]	validation_0-rmse:157.97645
-[850]	validation_0-rmse:157.95697
-[851]	validation_0-rmse:157.94190
-[852]	validation_0-rmse:157.92571
-[853]	validation_0-rmse:157.90536
-[854]	validation_0-rmse:157.88754
-[855]	validation_0-rmse:157.87168
-[856]	validation_0-rmse:157.85680
-[857]	validation_0-rmse:157.84232
-[858]	validation_0-rmse:157.82730
-[859]	validation_0-rmse:157.80757
-[860]	validation_0-rmse:157.79069
-[861]	validation_0-rmse:157.77122
-[862]	validation_0-rmse:157.75602
-[863]	validation_0-rmse:157.74146
-[864]	validation_0-rmse:157.72234
-[865]	validation_0-rmse:157.70852
-[866]	validation_0-rmse:157.69222
-[867]	validation_0-rmse:157.67342
-[868]	validation_0-rmse:157.65930
-[869]	validation_0-rmse:157.64584
-[870]	validation_0-rmse:157.62737
-[871]	validation_0-rmse:157.61295
-[872]	validation_0-rmse:157.59997
-[873]	validation_0-rmse:157.58183
-[874]	validation_0-rmse:157.56770
-[875]	validation_0-rmse:157.55003
-[876]	validation_0-rmse:157.53715
-[877]	validation_0-rmse:157.52374
-[878]	validation_0-rmse:157.50605
-[879]	validation_0-rmse:157.49235
-[880]	validation_0-rmse:157.47515
-[881]	validation_0-rmse:157.46286
-[882]	validation_0-rmse:157.44557
-[883]	validation_0-rmse:157.43219
-[884]	validation_0-rmse:157.41644
-[885]	validation_0-rmse:157.40421
-[886]	validation_0-rmse:157.39182
-[887]	validation_0-rmse:157.37999
-[888]	validation_0-rmse:157.36318
-[889]	validation_0-rmse:157.35027
-[890]	validation_0-rmse:157.33842
-[891]	validation_0-rmse:157.32265
-[892]	validation_0-rmse:157.30846
-[893]	validation_0-rmse:157.29207
-[894]	validation_0-rmse:157.27993
-[895]	validation_0-rmse:157.26841
-[896]	validation_0-rmse:157.25229
-[897]	validation_0-rmse:157.23993
-[898]	validation_0-rmse:157.22800
-[899]	validation_0-rmse:157.21699
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>XGBRegressor(base_score=0.5, booster=&#39;gbtree&#39;, callbacks=None,
-             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1,
-             early_stop_rounds=100, early_stopping_rounds=None,
-             enable_categorical=False, eval_metric=None, gamma=0.0, gpu_id=-1,
-             grow_policy=&#39;depthwise&#39;, importance_type=None,
-             interaction_constraints=&#39;&#39;, learning_rate=0.005, max_bin=256,
-             max_cat_to_onehot=4, max_delta_step=0, max_depth=3, max_leaves=0,
-             min_child_weight=5, missing=nan, monotone_constraints=&#39;()&#39;,
-             n_estimators=900, n_jobs=0, num_parallel_tree=1, predictor=&#39;auto&#39;,
-             random_state=0, reg_alpha=0, ...)</pre>
+<pre>RandomForestRegressor(max_depth=10, min_samples_leaf=8, min_samples_split=3,
+                      n_estimators=200)</pre>
 </div>
 
 </div>
@@ -15591,7 +14659,7 @@ Parameters: { &#34;early_stop_rounds&#34; } might not be used.
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Plot do feature importance</span>
-<span class="n">fi</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">modelo_xgb</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">modelo_xgb</span><span class="o">.</span><span class="n">feature_names_in_</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;importance&quot;</span><span class="p">])</span>
+<span class="n">fi</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">modelo_rf</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">x_treino</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;importance&quot;</span><span class="p">])</span>
 <span class="n">fi</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;importance&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Importância Dados&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -15628,7 +14696,7 @@ Parameters: { &#34;early_stop_rounds&#34; } might not be used.
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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"
+<img src="data:image/png;base64,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"
 >
 </div>
 
@@ -15645,7 +14713,7 @@ Parameters: { &#34;early_stop_rounds&#34; } might not be used.
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#Merge com predição</span>
-<span class="n">df_teste</span><span class="p">[</span><span class="s2">&quot;predicao&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">modelo_xgb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_teste</span><span class="p">)</span>
+<span class="n">df_teste</span><span class="p">[</span><span class="s2">&quot;predicao&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">modelo_rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_teste</span><span class="p">)</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_teste</span><span class="p">[[</span><span class="s2">&quot;predicao&quot;</span><span class="p">]],</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
@@ -15667,12 +14735,12 @@ Parameters: { &#34;early_stop_rounds&#34; } might not be used.
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>&lt;ipython-input-10-bed583d0c9c6&gt;:3: SettingWithCopyWarning: 
+<pre>&lt;ipython-input-10-d7d5d4158696&gt;:3: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  df_teste[&#34;predicao&#34;] = modelo_xgb.predict(x_teste)
+  df_teste[&#34;predicao&#34;] = modelo_rf.predict(x_teste)
 </pre>
 </div>
 </div>
@@ -15712,8 +14780,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>RRSE: 0.6929011501881002
-RMSE: 164.4647104816794
+<pre>RRSE: 0.6994294553854828
+RMSE: 166.0142472719296
 </pre>
 </div>
 </div>

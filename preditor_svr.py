@@ -1,12 +1,13 @@
 #Run cell
 #%%
-import xgboost as xgb
 import pandas as pd
 import numpy as np
 from pprint import pprint
 import matplotlib.pyplot as plt
 import sklearn.metrics as mtr
 from sklearn.model_selection import RandomizedSearchCV
+from sklearn.svm import SVR
+from eli5 import show_weights
 
 
 #%%
@@ -74,41 +75,50 @@ print(len(y_treino))
 #Escolha dos parâmetros
 
 params = {
-         "n_estimators": list(range(100, 1100, 100)), 
-         "max_depth": list(range(2, 15)),
-         "min_child_weight": list(range(1, 11)),
-         "learning_rate": [0.3, 0.2, 0.1, 0.05, 0.01, 0.005],
-         "gamma": np.arange(0, 0.7, 0.1)
+         "C": [0.1, 1, 10, 100, 1000], 
+         "gamma": ["scale", "auto"],
+         "kernel": ["rbf", "sigmoid", "poly"]
         }
 
 pprint(params)
 
 
 # %%
-#Criação do modelo_xgb utilizando RandomizedSearchCV
+#Criação do modelo_svr utilizando RandomizedSearchCV
 
-modelo_xgb = xgb.XGBRegressor(early_stop_rounds = 100)
-xgb_rand_search = RandomizedSearchCV(modelo_xgb, params, scoring="neg_mean_squared_error", n_iter=40, verbose=True, cv=10, n_jobs=-1, random_state=123)
-xgb_rand_search.fit(x_treino, y_treino)
-modelo_xgb = xgb_rand_search.best_estimator_
+modelo_svr = SVR()
+svr_rand_search = RandomizedSearchCV(modelo_svr, params, scoring="neg_mean_squared_error", n_iter=30, verbose=True, cv=10, n_jobs=-1, random_state=123)
+svr_rand_search.fit(x_treino, y_treino)
+modelo_svr = svr_rand_search.best_estimator_
 
-pprint(xgb_rand_search.best_params_)
+pprint(svr_rand_search.best_params_)
 
 
 # %%
-#Fit do modelo_xgb
-modelo_xgb.fit(x_treino, y_treino, eval_set = [(x_treino, y_treino)], verbose=True)
+#Fit do modelo_svr
+
+modelo_svr.fit(x_treino, y_treino)
 
 
 # %%
 #Plot do feature importance
-fi = pd.DataFrame(data=modelo_xgb.feature_importances_, index=modelo_xgb.feature_names_in_, columns=["importance"])
-fi.sort_values("importance").plot(kind="barh", title="Importância Dados")
+
+# names = list(x_treino.columns.values)
+# print(names)
+
+# imp = list(modelo_svr.coef_[0])
+
+# # imp, names = zip(*sorted(zip(imp,names)))
+# print(imp)
+# print(names)
+# plt.barh(names, imp)
+# plt.yticks(range(len(names)), names)
+# plt.show()
 
 
 #%%
 #Merge com predição
-df_teste["predicao"] = modelo_xgb.predict(x_teste)
+df_teste["predicao"] = modelo_svr.predict(x_teste)
 
 df = df.merge(df_teste[["predicao"]], how="left", left_index=True, right_index=True)
 
