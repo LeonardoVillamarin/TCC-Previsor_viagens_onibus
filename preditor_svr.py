@@ -7,8 +7,7 @@ import matplotlib.pyplot as plt
 import sklearn.metrics as mtr
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.svm import SVR
-from eli5 import show_weights
-
+from sklearn.inspection import permutation_importance
 
 #%%
 #Leitura da base de dados e conversão datetime
@@ -74,20 +73,19 @@ print(len(y_treino))
 #%%
 #Escolha dos parâmetros
 
-params = {
-         "C": [0.1, 1, 10, 100, 1000], 
-         "gamma": ["scale", "auto"],
-         "kernel": ["rbf", "sigmoid", "poly"]
+params_svr = {
+         "C": [0.1, 1, 10, 100, 1000], #Regularization parameter. The strength of the regularization is inversely proportional to C
+         "gamma": ["scale", "auto"],#Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’.
         }
 
-pprint(params)
+pprint(params_svr)
 
 
 # %%
 #Criação do modelo_svr utilizando RandomizedSearchCV
 
-modelo_svr = SVR()
-svr_rand_search = RandomizedSearchCV(modelo_svr, params, scoring="neg_mean_squared_error", n_iter=30, verbose=True, cv=10, n_jobs=-1, random_state=123)
+modelo_svr = SVR(kernel = 'rbf')
+svr_rand_search = RandomizedSearchCV(modelo_svr, params_svr, scoring="neg_mean_squared_error", n_iter=10, verbose=True, cv=10, n_jobs=-1, random_state=123)
 svr_rand_search.fit(x_treino, y_treino)
 modelo_svr = svr_rand_search.best_estimator_
 
@@ -96,40 +94,33 @@ pprint(svr_rand_search.best_params_)
 
 # %%
 #Fit do modelo_svr
-
 modelo_svr.fit(x_treino, y_treino)
 
-
 # %%
-#Plot do feature importance
+#Plot do feature importance (duvidoso)
 
-# names = list(x_treino.columns.values)
-# print(names)
-
-# imp = list(modelo_svr.coef_[0])
-
-# # imp, names = zip(*sorted(zip(imp,names)))
-# print(imp)
-# print(names)
-# plt.barh(names, imp)
-# plt.yticks(range(len(names)), names)
+# results = permutation_importance(modelo_svr, x_treino, y_treino, scoring='neg_mean_squared_error')
+# print(f'Result: {results}')
+# importance = results.importances_mean
+# print(f'Importance: {importance}')
+# for i,v in enumerate(importance):
+#     print('Feature: %0d, Score: %.5f' % (x_treino.columns[i],v)) # Duvidoso, não sabemos a onde das colunas
+# plt.bar([x for x in range(len(importance))], importance)
 # plt.show()
-
 
 #%%
 #Merge com predição
-df_teste["predicao"] = modelo_svr.predict(x_teste)
+df_teste["predicao_svr"] = modelo_svr.predict(x_teste)
 
-df = df.merge(df_teste[["predicao"]], how="left", left_index=True, right_index=True)
+df = df.merge(df_teste[["predicao_svr"]], how="left", left_index=True, right_index=True)
 
 
 # %%
 #Cálculo das métricas
-rrse = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao"]) ** 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ** 2))
-rmse = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao"], squared=False) 
+RRSE_svr = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao_svr"]) ** 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ** 2))
+RMSE_svr = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao_svr"], squared=False) 
 
-print(f"RRSE: {rrse}")
-print(f"RMSE: {rmse}")
+print(f"RRSE_svr: {RRSE_svr}")
+print(f"RMSE_svr: {RMSE_svr}")
 # %%
-
 

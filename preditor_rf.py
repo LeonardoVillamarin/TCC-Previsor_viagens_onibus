@@ -73,23 +73,23 @@ print(len(y_treino))
 #%%
 #Escolha dos parâmetros
 
-params = {
-         "n_estimators": list(range(100, 1100, 100)),
-         "bootstrap": [True, False],
-         "max_depth": list(range(2, 15)),
-         "max_features": ["auto", "sqrt", "log2"],
-         "min_samples_leaf": list(range(1, 11)),
-         "min_samples_split": list(range(2, 11)),
+params_rf = {
+         "n_estimators": list(range(100, 1100, 100)),#The number of trees in the forest.
+         "bootstrap": [True, False],#Whether bootstrap samples are used when building trees. If False, the whole dataset is used to build each tree.
+         "max_depth": list(range(2, 15)),#The maximum depth of the tree.
+         "max_features": ["auto", "sqrt", "log2"],#The number of features to consider when looking for the best split:
+         "min_samples_leaf": list(range(1, 11)),#The minimum number of samples required to split an internal node
+         "min_samples_split": list(range(2, 11)),#The minimum number of samples required to be at a leaf node.
         }
 
-pprint(params)
+pprint(params_rf)
 
 
 # %%
 #Criação do modelo_rf utilizando RandomizedSearchCV
 
 modelo_rf = RandomForestRegressor()
-rf_rand_search = RandomizedSearchCV(modelo_rf, params, scoring="neg_mean_squared_error", n_iter=40, verbose=True, cv=10, n_jobs=-1, random_state=123)
+rf_rand_search = RandomizedSearchCV(modelo_rf, params_rf, scoring="neg_mean_squared_error", n_iter=40, verbose=True, cv=10, n_jobs=-1, random_state=123)
 rf_rand_search.fit(x_treino, y_treino)
 modelo_rf = rf_rand_search.best_estimator_
 
@@ -103,24 +103,24 @@ modelo_rf.fit(x_treino, y_treino)
 
 # %%
 #Plot do feature importance
-fi = pd.DataFrame(data=modelo_rf.feature_importances_, index=x_treino.columns, columns=["importance"])
-fi.sort_values("importance").plot(kind="barh", title="Importância Dados")
+fi_rf = pd.DataFrame(data=modelo_rf.feature_importances_, index=x_treino.columns, columns=["importance"])
+fi_rf.sort_values("importance").plot(kind="barh", title="Importância Dados")
 
 
 #%%
 #Merge com predição
-df_teste["predicao"] = modelo_rf.predict(x_teste)
+df_teste["predicao_rf"] = modelo_rf.predict(x_teste)
 
-df = df.merge(df_teste[["predicao"]], how="left", left_index=True, right_index=True)
+df = df.merge(df_teste[["predicao_rf"]], how="left", left_index=True, right_index=True)
 
 
 # %%
 #Cálculo das métricas
-rrse = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao"]) ** 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ** 2))
-rmse = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao"], squared=False) 
+RRSE_rf = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao_rf"]) ** 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ** 2))
+RMSE_rf = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao_rf"], squared=False) 
 
-print(f"RRSE: {rrse}")
-print(f"RMSE: {rmse}")
+print(f"RRSE_rf: {RRSE_rf}")
+print(f"RMSE_rf: {RMSE_rf}")
 # %%
 
 

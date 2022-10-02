@@ -77,24 +77,35 @@ modelo_lr.fit(x_treino, y_treino)
 
 # %%
 #Plot do feature importance
-# fi = pd.DataFrame(data=modelo_lr.feature_importances_, index=modelo_lr.feature_names_in_, columns=["importance"])
-# fi.sort_values("importance").plot(kind="barh", title="Importância Dados")
 
+coefs_lr = pd.DataFrame(
+   modelo_lr.coef_,
+   columns=['Coeficiente'], 
+   index = x_treino.columns
+)
+coefs_lr.Coeficiente = coefs_lr.Coeficiente.abs()
+coefs_lr['DesvioPadrão'] = x_treino.std(axis=0)
+coefs_lr['Importancia'] = (100*coefs_lr['DesvioPadrão']*coefs_lr['Coeficiente'])/coefs_lr['DesvioPadrão']*coefs_lr['Coeficiente'].max()
+
+coefs_lr['Importancia'].plot(kind='barh', figsize=(9, 7))
+plt.title('Importância Dados')
+plt.axvline(x=0, color='.5')
+plt.subplots_adjust(left=.3)
 
 #%%
 #Merge com predição
-df_teste["predicao"] = modelo_lr.predict(x_teste)
+df_teste["predicao_lr"] = modelo_lr.predict(x_teste)
 
-df = df.merge(df_teste[["predicao"]], how="left", left_index=True, right_index=True)
+df = df.merge(df_teste[["predicao_lr"]], how="left", left_index=True, right_index=True)
 
 
 # %%
 #Cálculo das métricas
-rrse = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao"]) ** 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ** 2))
-rmse = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao"], squared=False) 
+RRSE_lr = np.sqrt(sum((df_teste["tempo_viagem"] - df_teste["predicao_lr"]) ** 2) / sum((df_teste["tempo_viagem"] - np.mean(df_teste["tempo_viagem"])) ** 2))
+RMSE_lr = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao_lr"], squared=False) 
 
-print(f"RRSE: {rrse}")
-print(f"RMSE: {rmse}")
+print(f"RRSE_lr: {RRSE_lr}")
+print(f"RMSE_lr: {RMSE_lr}")
 # %%
 
 
