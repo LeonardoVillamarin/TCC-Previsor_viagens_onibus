@@ -107,5 +107,3 @@ RMSE_lr = mtr.mean_squared_error(df_teste["tempo_viagem"], df_teste["predicao_lr
 print(f"RRSE_lr: {RRSE_lr}")
 print(f"RMSE_lr: {RMSE_lr}")
 # %%
-
-
