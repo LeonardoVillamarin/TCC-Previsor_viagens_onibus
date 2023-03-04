@@ -1,0 +1,553 @@
+Teste,Rota,Modelo,Métrica,Valor
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,XGB,RRSE,0.7047919088117734
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,XGB,MAPE,0.10886491164544922
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,XGB,Tempo de treino,1.787969
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,XGB,Tempo de predição,0.4969
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,RF,RRSE,0.7183301277410776
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,RF,MAPE,0.10769285824713647
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,RF,Tempo de treino,1.411451
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,RF,Tempo de predição,0.93
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,LR,RRSE,0.939191795840855
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,LR,MAPE,0.15361101531688978
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,LR,Tempo de treino,0.3028
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 33642,LR,Tempo de predição,0.1
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,XGB,RRSE,0.6875901929362729
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,XGB,MAPE,0.10057709585946913
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,XGB,Tempo de treino,0.991998
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,XGB,Tempo de predição,0.3967
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,RF,RRSE,0.6839141904710287
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,RF,MAPE,0.1015024285470307
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,RF,Tempo de treino,0.827002
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,RF,Tempo de predição,0.112031
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,LR,RRSE,0.9423788698656704
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,LR,MAPE,0.15254008150822873
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,LR,Tempo de treino,0.2032
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,LR,Tempo de predição,0.999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,XGB,RRSE,0.8527978301278971
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,XGB,MAPE,0.13388200556510552
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,XGB,Tempo de treino,0.984968
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,XGB,Tempo de predição,0.4969
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,RF,RRSE,0.8490262070429909
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,RF,MAPE,0.1344269021690521
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,RF,Tempo de treino,0.641037
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,RF,Tempo de predição,0.79
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,LR,RRSE,0.9473577973523538
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,LR,MAPE,0.1545908776106657
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,LR,Tempo de treino,0.1994
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 33642,LR,Tempo de predição,0.1002
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,XGB,RRSE,0.6975639505030611
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,XGB,MAPE,0.10358135116549391
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,XGB,Tempo de treino,1.2969
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,XGB,Tempo de predição,0.497
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,RF,RRSE,0.7013603153258989
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,RF,MAPE,0.10332362345187077
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,RF,Tempo de treino,1.19103
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,RF,Tempo de predição,0.98
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,LR,RRSE,0.9394678270916322
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,LR,MAPE,0.1536069631110091
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,LR,Tempo de treino,0.2001
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 33642,LR,Tempo de predição,0.1031
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,XGB,RRSE,0.8556287552121487
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,XGB,MAPE,0.13301226645442676
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,XGB,Tempo de treino,1.63999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,XGB,Tempo de predição,0.4998
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,RF,RRSE,0.856339728685264
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,RF,MAPE,0.1336022366116022
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,RF,Tempo de treino,0.951027
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,RF,Tempo de predição,0.83586
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,LR,RRSE,0.9445360339590889
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,LR,MAPE,0.15577608218578312
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,LR,Tempo de treino,0.2001
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 33642,LR,Tempo de predição,0.1
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,XGB,RRSE,0.7045390961740358
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,XGB,MAPE,0.1089004995465251
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,XGB,Tempo de treino,1.490968
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,XGB,Tempo de predição,0.5969
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,RF,RRSE,0.7101222923581062
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,RF,MAPE,0.10617405106869456
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,RF,Tempo de treino,1.490031
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,RF,Tempo de predição,0.95
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,LR,RRSE,0.9394667994585242
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,LR,MAPE,0.1536074217812383
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,LR,Tempo de treino,0.2
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 33642,LR,Tempo de predição,0.1999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,XGB,RRSE,0.9112182328881607
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,XGB,MAPE,0.1358753089447607
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,XGB,Tempo de treino,1.513969
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,XGB,Tempo de predição,0.3969
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,RF,RRSE,0.9299211975030187
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,RF,MAPE,0.14936133827703604
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,RF,Tempo de treino,1.372031
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,RF,Tempo de predição,0.87
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,LR,RRSE,0.9444841666535403
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,LR,MAPE,0.15580900249359925
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,LR,Tempo de treino,0.2
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 33642,LR,Tempo de predição,0.2001
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,XGB,RRSE,0.6913120703896043
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,XGB,MAPE,0.10370569816608068
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,XGB,Tempo de treino,1.87999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,XGB,Tempo de predição,0.4969
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,RF,RRSE,0.705295463293185
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,RF,MAPE,0.1092179736744999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,RF,Tempo de treino,1.229031
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,RF,Tempo de predição,0.109032
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,LR,RRSE,0.9261222741814066
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,LR,MAPE,0.15477684965979818
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,LR,Tempo de treino,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 33642,LR,Tempo de predição,0.197
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,XGB,RRSE,0.6906069981472664
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,XGB,MAPE,0.10162591533714022
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,XGB,Tempo de treino,1.35969
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,XGB,Tempo de predição,0.3997
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,RF,RRSE,0.6976482305529512
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,RF,MAPE,0.10526225297275625
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,RF,Tempo de treino,0.901012
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,RF,Tempo de predição,0.117088
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,LR,RRSE,0.915378706006163
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,LR,MAPE,0.1512214523011177
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,LR,Tempo de treino,0.3002
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 33642,LR,Tempo de predição,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,XGB,RRSE,0.6878002339966823
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,XGB,MAPE,0.10077712327228892
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,XGB,Tempo de treino,1.35969
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,XGB,Tempo de predição,0.5963
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,RF,RRSE,0.6826275760634491
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,RF,MAPE,0.10128143706093837
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,RF,Tempo de treino,0.868031
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,RF,Tempo de predição,0.10503
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,LR,RRSE,0.9423314404289496
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,LR,MAPE,0.1525172127850405
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,LR,Tempo de treino,0.2006
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 33642,LR,Tempo de predição,0.972
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,XGB,RRSE,0.6925028623422401
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,XGB,MAPE,0.10398598484982731
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,XGB,Tempo de treino,1.77965
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,XGB,Tempo de predição,0.3998
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,RF,RRSE,0.6978726534320654
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,RF,MAPE,0.10738114238051752
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,RF,Tempo de treino,1.367448
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,RF,Tempo de predição,0.117023
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,LR,RRSE,0.9265482600012815
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,LR,MAPE,0.15486993061426838
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,LR,Tempo de treino,0.3
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 33642,LR,Tempo de predição,0.1994
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,XGB,RRSE,0.6880909262868259
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,XGB,MAPE,0.1008792079729192
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,XGB,Tempo de treino,0.996937
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,XGB,Tempo de predição,0.3997
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,RF,RRSE,0.6833819436659814
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,RF,MAPE,0.10151907830675837
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,RF,Tempo de treino,0.874004
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,RF,Tempo de predição,0.107027
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,LR,RRSE,0.9423120479749986
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,LR,MAPE,0.15254267997885523
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,LR,Tempo de treino,0.1999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 33642,LR,Tempo de predição,0.1005
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,XGB,RRSE,0.6899664434291213
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,XGB,MAPE,0.10153721083971098
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,XGB,Tempo de treino,1.61971
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,XGB,Tempo de predição,0.3996
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,RF,RRSE,0.6968241864429735
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,RF,MAPE,0.10502768391084613
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,RF,Tempo de treino,0.937003
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,RF,Tempo de predição,0.113
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,LR,RRSE,0.9155282711737597
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,LR,MAPE,0.15119639944823693
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,LR,Tempo de treino,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 33642,LR,Tempo de predição,0.1
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,XGB,RRSE,0.6900067554604452
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,XGB,MAPE,0.10185892557464536
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,XGB,Tempo de treino,1.242969
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,XGB,Tempo de predição,0.4967
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,RF,RRSE,0.6874685945841822
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,RF,MAPE,0.10331501418083502
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,RF,Tempo de treino,1.363002
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,RF,Tempo de predição,0.136031
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,LR,RRSE,0.8083502803237187
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,LR,MAPE,0.12769833477939208
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,LR,Tempo de treino,0.2031
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 33642,LR,Tempo de predição,0.1001
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,RRSE,0.6830559784703689
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,MAPE,0.10073281427545547
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de treino,1.23097
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de predição,0.4007
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,RRSE,0.6829912632365168
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,MAPE,0.10282330402793641
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de treino,1.687001
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de predição,0.148002
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,RRSE,0.7534179583762686
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,MAPE,0.11853975981489319
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de treino,0.3007
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de predição,0.999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,XGB,RRSE,0.6845188809372166
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,XGB,MAPE,0.10155646980466168
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,XGB,Tempo de treino,1.542437
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,XGB,Tempo de predição,0.5969
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,RF,RRSE,0.6847659405550331
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,RF,MAPE,0.10362930064778528
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,RF,Tempo de treino,1.974707
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,RF,Tempo de predição,0.152002
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,LR,RRSE,0.7368833241753634
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,LR,MAPE,0.11573551561357542
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,LR,Tempo de treino,0.3
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 33642,LR,Tempo de predição,0.1999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,XGB,RRSE,0.6825848190228514
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,XGB,MAPE,0.10144528559609726
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,XGB,Tempo de treino,1.503455
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,XGB,Tempo de predição,0.5998
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,RF,RRSE,0.6857371417960827
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,RF,MAPE,0.10399671358824214
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,RF,Tempo de treino,2.808561
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,RF,Tempo de predição,0.16598
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,LR,RRSE,0.7286512974893975
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,LR,MAPE,0.11431531595405393
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,LR,Tempo de treino,0.3
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 33642,LR,Tempo de predição,0.999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,XGB,RRSE,0.683365534896862
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,XGB,MAPE,0.10191082956839607
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,XGB,Tempo de treino,1.44308
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,XGB,Tempo de predição,0.5999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,RF,RRSE,0.6851087416368545
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,RF,MAPE,0.10385798450046842
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,RF,Tempo de treino,2.971824
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,RF,Tempo de predição,0.166207
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,LR,RRSE,0.7250227037186583
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,LR,MAPE,0.11363679517559079
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,LR,Tempo de treino,0.2999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 33642,LR,Tempo de predição,0.1
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,RRSE,0.6853790950194674
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,MAPE,0.10396407854508699
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de treino,0.947017
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de predição,0.1
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,RRSE,0.6859317284141169
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,MAPE,0.10656458939456896
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de treino,0.6669
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de predição,0.255576
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,RRSE,0.7367626160202082
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,MAPE,0.11721878572933123
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de treino,0.1997
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de predição,0.1999
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,RRSE,0.6902604863724698
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,MAPE,0.10267028409584227
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de treino,1.119071
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de predição,0.7996
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,RRSE,0.6872683019678251
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,MAPE,0.10398392104950967
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de treino,0.94776
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de predição,0.27208
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,RRSE,0.7388220679343954
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,MAPE,0.11625713645208943
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de treino,0.2001
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de predição,0.2
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,RRSE,0.6822636314329509
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,MAPE,0.10159962141515369
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de treino,1.167562
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de predição,0.35996
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,RRSE,0.6837589291507318
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,MAPE,0.10339500725552202
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de treino,1.241622
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de predição,0.207004
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,RRSE,0.7483727109817399
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,MAPE,0.1165320035964439
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de treino,0.2972
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de predição,0.1998
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,RRSE,0.6895031626500685
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,MAPE,0.10119297090744347
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de treino,1.230998
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de predição,0.21998
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,RRSE,0.6902533075745397
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,MAPE,0.1032317459979242
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de treino,1.529
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de predição,0.177034
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,RRSE,0.7580683988720933
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,MAPE,0.11751474172824102
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de treino,0.2001
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de predição,0.1997
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,RRSE,0.6857706210453482
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,MAPE,0.10186483508982694
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de treino,1.272998
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,XGB,Tempo de predição,0.10968
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,RRSE,0.6862115501269899
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,MAPE,0.10382891748363265
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de treino,1.801003
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,RF,Tempo de predição,0.128003
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,RRSE,0.7581215013262192
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,MAPE,0.12075758072883445
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de treino,0.3029
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 33642,LR,Tempo de predição,0.1998
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,XGB,RRSE,0.9519152349372465
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,XGB,MAPE,0.22726936201577635
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,XGB,Tempo de treino,1.168999
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,XGB,Tempo de predição,0.29999
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,RF,RRSE,1.048952690053527
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,RF,MAPE,0.27990247701008897
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,RF,Tempo de treino,0.964001
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,RF,Tempo de predição,0.66
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,LR,RRSE,1.0113613182641148
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,LR,MAPE,0.22098256888796805
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,LR,Tempo de treino,0.1999
+"0 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, turno_dia, qtdDiasAno, partidaTimeStamp]",SP - 32893,LR,Tempo de predição,0.1
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,XGB,RRSE,0.9450378614278256
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,XGB,MAPE,0.22381196238193354
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,XGB,Tempo de treino,0.885999
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,XGB,Tempo de predição,0.24026
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,RF,RRSE,0.9473118232260175
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,RF,MAPE,0.22713852612246438
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,RF,Tempo de treino,0.661451
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,RF,Tempo de predição,0.81
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,LR,RRSE,0.9955533220785527
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,LR,MAPE,0.24941603677692126
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,LR,Tempo de treino,0.2002
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 32893,LR,Tempo de predição,0.1002
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,XGB,RRSE,0.9882557045054347
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,XGB,MAPE,0.23878649104040076
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,XGB,Tempo de treino,0.849999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,XGB,Tempo de predição,0.3
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,RF,RRSE,0.9884156343547087
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,RF,MAPE,0.24139667472867266
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,RF,Tempo de treino,0.526001
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,RF,Tempo de predição,0.61
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,LR,RRSE,0.9961419368603107
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,LR,MAPE,0.24934239880578105
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,LR,Tempo de treino,0.1999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia]",SP - 32893,LR,Tempo de predição,0.1
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,XGB,RRSE,1.011661217325538
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,XGB,MAPE,0.2694672618007977
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,XGB,Tempo de treino,0.895
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,XGB,Tempo de predição,0.27996
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,RF,RRSE,1.013951474885336
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,RF,MAPE,0.25984503151796595
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,RF,Tempo de treino,0.87
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,RF,Tempo de predição,0.70002
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,LR,RRSE,1.008438307205428
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,LR,MAPE,0.2207931630172646
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,LR,Tempo de treino,0.2003
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, qtdDiasAno]",SP - 32893,LR,Tempo de predição,0.1
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,XGB,RRSE,1.071269879702727
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,XGB,MAPE,0.28157762650599755
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,XGB,Tempo de treino,0.859998
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,XGB,Tempo de predição,0.25969
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,RF,RRSE,1.0691950982234781
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,RF,MAPE,0.277457169436641
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,RF,Tempo de treino,0.719031
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,RF,Tempo de predição,0.61999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,LR,RRSE,1.0088015777611414
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,LR,MAPE,0.22075115359757974
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,LR,Tempo de treino,0.2
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, qtdDiasAno]",SP - 32893,LR,Tempo de predição,0.1
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,XGB,RRSE,1.07607326751777
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,XGB,MAPE,0.30132270749717643
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,XGB,Tempo de treino,1.11997
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,XGB,Tempo de predição,0.22966
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,RF,RRSE,0.979210358960847
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,RF,MAPE,0.24742187335676868
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,RF,Tempo de treino,1.32999
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,RF,Tempo de predição,0.68
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,LR,RRSE,1.0084350852617152
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,LR,MAPE,0.22079316060668636
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,LR,Tempo de treino,0.2034
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia, partidaTimeStamp]",SP - 32893,LR,Tempo de predição,0.999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,XGB,RRSE,1.1381433356709911
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,XGB,MAPE,0.2896390254628305
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,XGB,Tempo de treino,1.233999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,XGB,Tempo de predição,0.18
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,RF,RRSE,1.1266957728037157
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,RF,MAPE,0.2862654489181433
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,RF,Tempo de treino,0.915013
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,RF,Tempo de predição,0.6
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,LR,RRSE,1.0087140114770456
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,LR,MAPE,0.22080327905740912
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,LR,Tempo de treino,0.1999
+"1 Teste de Colunas - [dia_semana, tipo_dia, turno_dia, partidaTimeStamp]",SP - 32893,LR,Tempo de predição,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,XGB,RRSE,0.9609381463481033
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,XGB,MAPE,0.2223808164832041
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,XGB,Tempo de treino,0.949999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,XGB,Tempo de predição,0.37999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,RF,RRSE,0.948067223188112
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,RF,MAPE,0.22573095455054204
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,RF,Tempo de treino,0.877
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,RF,Tempo de predição,0.80002
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,LR,RRSE,1.000899786952847
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,LR,MAPE,0.2594548098203446
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,LR,Tempo de treino,0.2001
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao, Temperatura]",SP - 32893,LR,Tempo de predição,0.1035
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,XGB,RRSE,0.9479980687778703
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,XGB,MAPE,0.2248686665276285
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,XGB,Tempo de treino,0.899967
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,XGB,Tempo de predição,0.17969
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,RF,RRSE,0.9490361639381474
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,RF,MAPE,0.22592589150028708
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,RF,Tempo de treino,0.704004
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,RF,Tempo de predição,0.78
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,LR,RRSE,0.9983431290249376
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,LR,MAPE,0.25615223039869234
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,LR,Tempo de treino,0.2028
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva, Calor]",SP - 32893,LR,Tempo de predição,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,XGB,RRSE,0.9456961338290771
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,XGB,MAPE,0.22414373539001725
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,XGB,Tempo de treino,0.895
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,XGB,Tempo de predição,0.28999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,RF,RRSE,0.9442597548165655
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,RF,MAPE,0.2261737501842034
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,RF,Tempo de treino,0.690001
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,RF,Tempo de predição,0.75025
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,LR,RRSE,0.9948540459093559
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,LR,MAPE,0.24880950094809517
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,LR,Tempo de treino,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Precipitacao]",SP - 32893,LR,Tempo de predição,0.1001
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,XGB,RRSE,0.961120306383517
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,XGB,MAPE,0.2233912488697088
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,XGB,Tempo de treino,0.934997
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,XGB,Tempo de predição,0.2897
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,RF,RRSE,0.9497708088734526
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,RF,MAPE,0.22575539960317473
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,RF,Tempo de treino,0.982036
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,RF,Tempo de predição,0.83999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,LR,RRSE,1.0015160839480068
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,LR,MAPE,0.2597933342605088
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,LR,Tempo de treino,0.1994
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Temperatura]",SP - 32893,LR,Tempo de predição,0.1
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,XGB,RRSE,0.9465049562432934
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,XGB,MAPE,0.2245397956606084
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,XGB,Tempo de treino,0.9
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,XGB,Tempo de predição,0.29996
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,RF,RRSE,0.9451933590465968
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,RF,MAPE,0.2266294372068998
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,RF,Tempo de treino,0.702004
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,RF,Tempo de predição,0.78003
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,LR,RRSE,0.9953877468190457
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,LR,MAPE,0.24945835763077587
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,LR,Tempo de treino,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Chuva]",SP - 32893,LR,Tempo de predição,0.2
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,XGB,RRSE,0.9454603303699879
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,XGB,MAPE,0.22394113502596288
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,XGB,Tempo de treino,0.919969
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,XGB,Tempo de predição,0.32
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,RF,RRSE,0.9514857617446646
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,RF,MAPE,0.2264393557522112
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,RF,Tempo de treino,0.746
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,RF,Tempo de predição,0.8003
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,LR,RRSE,0.9984492438075776
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,LR,MAPE,0.25581585154202197
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,LR,Tempo de treino,0.1999
+"2 Teste Clima - [dia_semana, tipo_dia, hora_dia, Calor]",SP - 32893,LR,Tempo de predição,0.1
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,XGB,RRSE,0.941282775599936
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,XGB,MAPE,0.21905326287357244
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,XGB,Tempo de treino,1.94964
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,XGB,Tempo de predição,0.5466
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,RF,RRSE,0.9438766555745499
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,RF,MAPE,0.22109304436198965
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,RF,Tempo de treino,0.99281
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,RF,Tempo de predição,0.90514
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,LR,RRSE,0.9647909560579802
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,LR,MAPE,0.23802237817994965
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,LR,Tempo de treino,0.2001
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1]",SP - 32893,LR,Tempo de predição,0.1
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,RRSE,0.9375940685586607
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,MAPE,0.2185524868645865
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de treino,1.199
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de predição,0.4002
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,RRSE,0.9351807579160867
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,MAPE,0.21899549641881452
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de treino,1.185
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de predição,0.91003
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,RRSE,0.959239971169782
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,MAPE,0.23418917699875555
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de treino,0.3
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de predição,0.1999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,XGB,RRSE,0.937352478746061
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,XGB,MAPE,0.21953746880774166
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,XGB,Tempo de treino,1.175028
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,XGB,Tempo de predição,0.13996
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,RF,RRSE,0.9356437395105213
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,RF,MAPE,0.221248065529149
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,RF,Tempo de treino,1.312098
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,RF,Tempo de predição,0.98032
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,LR,RRSE,0.9632608073433886
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,LR,MAPE,0.234845754818555
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,LR,Tempo de treino,0.2973
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3]",SP - 32893,LR,Tempo de predição,0.197
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,XGB,RRSE,0.9358097191423217
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,XGB,MAPE,0.21844577029337653
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,XGB,Tempo de treino,1.207047
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,XGB,Tempo de predição,0.21999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,RF,RRSE,0.9398475842972089
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,RF,MAPE,0.22150674475688129
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,RF,Tempo de treino,1.788842
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,RF,Tempo de predição,0.103024
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,LR,RRSE,0.9622628534856958
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,LR,MAPE,0.23472020541013824
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,LR,Tempo de treino,0.2001
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4]",SP - 32893,LR,Tempo de predição,0.1976
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,XGB,RRSE,0.933950857399646
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,XGB,MAPE,0.21865040941673364
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,XGB,Tempo de treino,1.296997
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,XGB,Tempo de predição,0.26999
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,RF,RRSE,0.9343136194084524
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,RF,MAPE,0.22141243182548098
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,RF,Tempo de treino,1.873534
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,RF,Tempo de predição,0.10203
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,LR,RRSE,0.960476350392863
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,LR,MAPE,0.23437037241771994
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,LR,Tempo de treino,0.2968
+"3 Teste com os tempos de viagem anteriores - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2, tempo_viagem_3, tempo_viagem_4, tempo_viagem_5]",SP - 32893,LR,Tempo de predição,0.1972
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,RRSE,0.9936670140520674
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,MAPE,0.24054613268032096
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de treino,0.857996
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de predição,0.29968
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,RRSE,0.9697011135136135
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,MAPE,0.23604828382265222
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de treino,0.537003
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de predição,0.160001
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,RRSE,0.9684447562070807
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,MAPE,0.24272093193151487
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de treino,0.2029
+"4 Teste de quantidade de dados para treino - 2 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de predição,0.2002
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,RRSE,0.9866417498352575
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,MAPE,0.23046675383443024
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de treino,0.988781
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de predição,0.3
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,RRSE,0.9758468408904198
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,MAPE,0.2338460457051693
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de treino,0.69349
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de predição,0.153999
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,RRSE,0.9719805266368365
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,MAPE,0.240447024745119
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de treino,0.2
+"4 Teste de quantidade de dados para treino - 4 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de predição,0.2001
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,RRSE,0.9608144577362442
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,MAPE,0.22197335835914594
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de treino,1.60969
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de predição,0.4997
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,RRSE,0.9527015526145797
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,MAPE,0.2223107675704836
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de treino,0.909026
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de predição,0.141
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,RRSE,0.9684134624897314
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,MAPE,0.2350391006876417
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de treino,0.2004
+"4 Teste de quantidade de dados para treino - 6 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de predição,0.2
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,RRSE,0.9432636730045385
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,MAPE,0.21746458407327385
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de treino,1.193998
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de predição,0.5999
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,RRSE,0.9413630770646282
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,MAPE,0.21890208915586018
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de treino,1.92643
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de predição,0.112999
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,RRSE,0.9631178849461061
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,MAPE,0.23498216807455177
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de treino,0.3
+"4 Teste de quantidade de dados para treino - 8 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de predição,0.999
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,RRSE,0.9375809970550764
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,MAPE,0.22166732424390045
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de treino,1.256969
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,XGB,Tempo de predição,0.4001
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,RRSE,0.9368728612514642
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,MAPE,0.22304288545348347
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de treino,1.273
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,RF,Tempo de predição,0.86998
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,RRSE,0.9549288056395828
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,MAPE,0.236008698564978
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de treino,0.2
+"4 Teste de quantidade de dados para treino - 10 semanas - [dia_semana, tipo_dia, hora_dia, Precipitacao, tempo_viagem_1, tempo_viagem_2]",SP - 32893,LR,Tempo de predição,0.2002

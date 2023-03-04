@@ -1,0 +1,51 @@
+Hyperparametros (Foi rodados um Randomized Search para encontrar essa combinação):
+    XGB:
+        gamma = 0.0,
+        learning_rate = 0.01,
+        max_depth = 4,
+        min_child_weight = 8,
+        n_estimators = 500
+
+    Randon Forest:
+        bootstrap = True,
+        max_depth = 11,
+        max_features = 'log2',
+        min_samples_leaf = 7,
+        min_samples_split = 6,
+        n_estimators = 500
+
+
+Processo realizado:
+    Primeira parte:
+        Removemos as colunas desnecessárias
+        Vimos a correlação entre as colunas (algumas com correlação alta, passiveis de remoção/teste)
+        Separamos os dados em treino e teste (70/30 proporção "padrão")
+        Rodamos um Randomized Search para encontrar a melhor hyperparametrização (não será alterada ao longo de todos os teste)
+        Executamos os modelos com todas as colunas e tiramos o feature importance (avaliar o quão 'útil' elas são)
+        Rodamos teste alternando as colunas para encontrar a "melhor" combinação
+        Selecionamos a melhor combinação para manter nas próximas etapas.
+        Melhor combinação = [dia_semana, tipo_dia, hora_dia] 
+            -> XGB = 0.68759, Tempo de treino = 1.102998, Tempo de predição = 0.600100
+            -> RF = 0.683683, Tempo de treino = 0.857119, Tempo de predição = 0.112094
+    
+    Segunda parte:
+        Adicionamos colunas de temperatura e chuva (Tanto o dado número como 40°C como categoria "Muito calor")
+        Fizemos testes alternando entre, ambos os dois dados ou apenas um deles. Nunca colocando o mesmo dado nas duas formas (categoria e numéria)
+        Selecionamos a melhor combinação para manter nas próximas etapas.
+        Melhor combinação = [dia_semana, tipo_dia, hora_dia, Precipitacao] 
+            -> XGB = 0.687800, Tempo de treino = 1.419720, Tempo de predição = 0.496900 
+            -> RF = 0.682172, Tempo de treino = 0.893315, Tempo de predição = 0.104003
+
+    Terceira parte:
+        Adicionamos os tempos das 5 ultimas viagens
+        Fizemos os testes usando apenas o tempo da ultima viagem até as 5 ultimas
+        Selecionamos a melhor combinação para manter nas próximas etapas.
+        Melhor combinação = XGB com 4 tempos anteriores e RF com 2 tempos (diferença minima entre tods) 
+            -> XGB = 0.682585, Tempo de treino = 1.542999, Tempo de predição = 0.599700 
+            -> RF = 0.683097, Tempo de treino = 1.657029, Tempo de predição = 0.147000
+    
+    Quarta parte:
+        Alternamos os a quantidade de dados de treino para verificar qual proporção seria "ideal"
+        Melhor combinação = 3 semana 42 dias 
+            -> XGB = 0.683582, Tempo de treino = 1.414000, Tempo de predição = 0.300000 
+            -> RF = 0.683296, Tempo de treino = 1.680001, Tempo de predição = 0.152999
