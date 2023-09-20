@@ -1,0 +1,2 @@
+Teste,Rota,Modelo,Métrica,Valor,Tempo de treino,Tempo de previsão
+"1 Teste de Colunas - [dia_semana, tipo_dia, hora_dia]",SP - 33642,XGBoost,MAPE,0.1005770958594691,0.956386,0.4
